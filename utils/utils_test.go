@@ -17,3 +17,15 @@ func TestStrPager(t *testing.T) {
 		fmt.Println(pageItems)
 	}
 }
+
+func TestRmDupNumArr(t *testing.T) {
+	arr := []int64{1, 1, 2, 2, 3, 4, 4, 5, 5}
+	r := RmDupNumArr(arr)
+	fmt.Println(r)
+}
+
+func TestJoinNumArr(t *testing.T) {
+	arr := []int64{1, 1, 2, 2, 3, 4, 4, 5, 5}
+	r := JoinNumArr(arr, ",")
+	fmt.Println(r)
+}
